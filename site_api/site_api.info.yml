@@ -1,0 +1,6 @@
+name: Site API Key
+type: module
+description: 'Manages Site Api Key And Show Content In Json Format For A Valid API Key'
+package: Custom
+version: 8.x
+core: 8.x

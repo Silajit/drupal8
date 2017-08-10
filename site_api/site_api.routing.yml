@@ -1,0 +1,6 @@
+site_api.content:
+  path: '/json-data/{sitekey}/{nid}' 
+  defaults: 
+    _controller: '\Drupal\site_api\Controller\SiteApiController::getJsonbyNodeId' 
+  requirements: 
+    _permission: 'access content'
