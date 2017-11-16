@@ -53,6 +53,10 @@ class SiteApiController extends ControllerBase {
   }
 
 }   
-
+  public function showMigration() {
+    return array(
+      '#markup' => t('Hello World!'),
+    );
+  }
 }
 

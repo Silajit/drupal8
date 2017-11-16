@@ -4,3 +4,18 @@ site_api.content:
     _controller: '\Drupal\site_api\Controller\SiteApiController::getJsonbyNodeId' 
   requirements: 
     _permission: 'access content'
+    
+site_api.migrationcontent:
+  path: '/admin/config/migration' 
+  defaults: 
+    _controller: '\Drupal\site_api\Controller\SiteApiController::showMigration' 
+  requirements: 
+    _permission: 'administer site configuration'
+    
+site_api.custom_index:
+  path: '/admin/config/customlist'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Custom Section'
+  requirements:
+    _permission: 'access administration pages'

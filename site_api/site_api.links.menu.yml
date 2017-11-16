@@ -1,0 +1,22 @@
+site_api.migration:
+  title: 'Drupal 8 Migration'
+  description: 'Show steps to migrate into drupal 8'
+  parent: system.admin_config
+  url: https://www.drupal.org/docs/8/converting-drupal-7-modules-to-drupal-8
+  #url can be internal path too
+  weight: 100
+  
+site_api.custom_index:
+  title: 'Custom Section'
+  route_name: site_api.custom_index
+  parent: system.admin_config
+  description: 'Custom Section.'
+  position: left
+  weight: 50
+
+site_api.custom_listing:
+  title: 'Custom User Listing'
+  description: 'Show user listing with total content'
+  parent: site_api.custom_index
+  route_name: site_api.migrationcontent
+
