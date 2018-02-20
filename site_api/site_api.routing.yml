@@ -19,3 +19,19 @@ site_api.custom_index:
     _title: 'Custom Section'
   requirements:
     _permission: 'access administration pages'
+
+candidateresume.form:
+ path: '/resume/myform'
+ defaults:
+   _title: 'Application form'
+   _form: '\Drupal\site_api\Form\CandidateResumeForm'
+ requirements:
+   _permission: 'access content'
+
+candidatework.form:
+  path: '/resume/mypage'
+  defaults:
+    _form: '\Drupal\site_api\Form\CandidateWorkForm'
+    _title: 'Drupal-8 form'
+  requirements:
+    _permission: 'access content'
